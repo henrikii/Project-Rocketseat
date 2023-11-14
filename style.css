@@ -28,6 +28,7 @@ body * {
 body {
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
+  transition: background 0.3s ease-in;
 }
 #container {
   margin: 56px auto 0;
@@ -69,10 +70,10 @@ body {
   border-radius: 50%;
   border: 0;
   background: white var(--switch-background) no-repeat center;
-  animation: slide-out 0.2s;
+  animation: slide-out 0.3s;
 }
 .light #switch button {
-  animation: slide-in 0.2s forwards;
+  animation: slide-in 0.3s forwards;
 }
 #switch button:hover {
   outline: 8px solid var(--highlight-color);
@@ -158,5 +159,9 @@ footer {
   }
   to {
     left: 0;
+  }
+}
+@keyframes bg-fade-in {
+  from {
   }
 }
